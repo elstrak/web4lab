@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            body { font-size: 1em; }
+            svg { border: 1px solid black; }
+            button { font-size: 1em; width: auto; height: auto; }
+            input { font-size: 1em; }
+            #rotateCheckbox { transform: scale(2); }
+        </style>
+    </head>
+<body>
+    <svg id="drawing" width="100%" height="100vh"></svg>
+
+    <h2>Управление анимацией</h2>
+    <form>
+        <label for="duration">Длительность (мс):</label>
+        <input type="number" id="duration" value="5000" step="500"> <br>
+
+
+        <label for="color">Цвет:</label>
+        <input type="color" id="color" value="#ff0000">
+        <br>
+
+        <button type="button" id="start">Запустить анимацию</button>
+        <button type="button" id="clear">Очистить</button>
+    </form>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="script.js"></script> </body>
+</html>
